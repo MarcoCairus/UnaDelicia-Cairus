@@ -1,4 +1,4 @@
-
+import CarWidget from "./CarWidget"
 const navBar = () => {
     return (
         
@@ -16,6 +16,7 @@ const navBar = () => {
                 </li>
             </ul>
             <a href='/#'>Login</a>
+            <CarWidget />
         </nav>
         
         

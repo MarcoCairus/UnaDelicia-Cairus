@@ -1,11 +1,13 @@
 
+import ItemListContainer from './componentes/ItemListContainer';
 import Navbar from './componentes/Navbar';
 
 function App() {
   return (
-      <header>
+      <>
         <Navbar />
-      </header>
+        <ItemListContainer greeting={'Las mejores comidas del Pais'}/>
+      </>
   );
 }
 
