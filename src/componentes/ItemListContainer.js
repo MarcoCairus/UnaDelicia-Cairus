@@ -1,8 +1,24 @@
-
+import { useState } from "react"
+import ItemCount from "./ItemCount"
 function ItemListContainer({greeting}) {
+    const [items,setItems]=useState({naame:'Lasagna', stock:6})
+    function onAdd(a){
+        let valor = document.getElementById('numb').value;
+        let carrito = document.getElementById('addCarrito');
+        console.log(valor)
+        console.log(carrito)
+        if(valor===0){
+            let newCarrito= carrito.disabled=true;
+            return newCarrito;
+        }
+        else if(valor>0){
+            alert('Agregaste al Carrito' + valor);
+        }
+    }
     return (
         <div>
-            <h2>{greeting}</h2>
+            <h2 style={{fontSize:'48px'}}>{greeting}</h2>
+            <ItemCount stock={items.stock} initial={1} onAdd={onAdd}/>
         </div>
     )
 }
