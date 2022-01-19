@@ -45,3 +45,36 @@ span{
 .fa-shopping-cart{
   font-size: 25px;
 }
+.countCarrito{
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+  width: 220px;
+  height: 150px;
+}
+.countCarrito>div>div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.menos, .mas{
+  text-align: center;
+  border:1px solid;
+  cursor: pointer;
+  user-select: none;
+  background-color: #849acf;
+}
+.countCarrito>div{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  flex-wrap: wrap;
+}
+#addCarrito{
+  display: inline-block;
+  width: 50%;
+  height: 60%;
+}

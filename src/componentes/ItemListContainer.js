@@ -16,10 +16,13 @@ function ItemListContainer({greeting}) {
         }
     }
     return (
-        <div>
+        <section>      
             <h2 style={{fontSize:'48px'}}>{greeting}</h2>
-            <ItemCount stock={items.stock} initial={1} onAdd={onAdd}/>
-        </div>
+            <article className='countCarrito'>
+                <div><span>{items.naame}</span></div>
+                <ItemCount stock={items.stock} initial={1} onAdd={onAdd}/>
+            </article>    
+        </section>
     )
 }
 

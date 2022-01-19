@@ -14,11 +14,12 @@ const ItemCount = ({stock, initial, onAdd}) => {
     }
     return (
         <div>
-            <span onClick={()=>resta()}>-</span>
-            <input type='number' value={count} id='numb'/>
-            <span onClick={()=>suma()}>+</span>
+            <div><span className='menos' onClick={()=>resta()}>-</span>
+            <input type='number' value={count} id='numb' readOnly/>
+            <span className='mas' onClick={()=>suma()}>+</span></div>
             <button id='addCarrito' onClick={()=>onAdd()}>Agregar Carrito</button>
         </div>
+        
     )
 }
 
